@@ -1,4 +1,4 @@
-param($LogPath = 'C:\Windows\Temp\ZoomAddinUninstall.log')
+$LogPath = 'C:\Windows\Temp\ZoomAddinUninstall.log'
 
 # Prerequisite function
 (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/tonypags/PsWinAdmin/master/Get-InstalledSoftware.ps1')|iex;
