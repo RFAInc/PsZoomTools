@@ -5,7 +5,7 @@ $LogPath = 'C:\Windows\Temp\ZoomAddinUninstall.log'
 
 # Get the uninstall string from HKLM
 $AppSearchTerm = 'Zoom Outlook Plugin'
-$RegInfo = Get-InstalledSoftware | Where-Object {$.Name -eq $AppSearchTerm}
+$RegInfo = Get-InstalledSoftware | Where-Object {$_.Name -eq $AppSearchTerm}
 $rawUninstallString = $RegInfo.UninstallCommand
 
 # Check to make sure we have something to do
